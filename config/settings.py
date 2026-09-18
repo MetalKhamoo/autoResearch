@@ -43,7 +43,7 @@ class Settings(BaseSettings):
 
     # ── LLM ──────────────────────────────────────────────────────────────────
     llm_provider: LLMProviderName = LLMProviderName.anthropic
-    llm_model: str = "claude-opus-4-5"
+    llm_model: str = "claude-sonnet-5"  # claude-opus-5 for max capability; claude-haiku-4-5-20251001 for speed
     anthropic_api_key: str | None = Field(default=None)
     openai_api_key: str | None = Field(default=None)
 
